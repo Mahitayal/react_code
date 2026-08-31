@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import { useNavigate } from 'react-router-dom'; // used to navigate from one page to another page
 
 function App() {
+  const navigate= useNavigate();
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +20,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <button onClick={()=> {navigate('/header' ,{state:{id:"1",name:"ABC"}})}}> Go to Header </button>
+      <button onClick={()=> navigate('/footer')}> Go to Footer </button>
     </div>
   );
 }
