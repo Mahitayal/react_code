@@ -20,9 +20,6 @@ root.render(
       <Route path="/main" element={<Main />} />
     </Routes>
     </BrowserRouter>
-    {/* <Header /> */}
-    {/* <App /> */}
-    {/* <Footer /> */}
   </React.StrictMode>
 );
 
